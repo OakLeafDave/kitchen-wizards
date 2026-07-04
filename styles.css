@@ -222,5 +222,14 @@ h1,h2,h3,h4{font-family:var(--disp);font-weight:400;letter-spacing:-.015em;color
   .proc-grid{grid-template-columns:1fr}
   .ft-in{grid-template-columns:1fr 1fr}
   .vf-row{grid-template-columns:1fr}
-  .residence{flex-direction:column;gap:.5rem}
+  /* Gallery: clean single column, no orphaned span-holes */
+  .gal{grid-template-columns:1fr;grid-auto-rows:auto;gap:14px}
+  .gal .tile{grid-column:auto!important;grid-row:auto!important;aspect-ratio:4/3;border-radius:16px}
+  .gal .tile img{height:100%}
+  .tcap{opacity:1;transform:none;padding:1.5rem 1.1rem .95rem}
+  /* Tighten oversized vertical gaps */
+  .work-head{margin-bottom:2.5rem}
+  .residence{flex-direction:column;gap:.5rem;margin-top:3rem;margin-bottom:1.4rem}
+  .feature{margin-bottom:4rem}
+  .proc-grid{gap:1rem}
 }
